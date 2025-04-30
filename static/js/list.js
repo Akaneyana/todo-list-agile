@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   tasks.forEach(task => {
     const li = document.createElement("li");
-    li.textContent = task.text;
+    li.textContent = `${task.text} (${task.priority})`;
 
     const deleteBtn = document.createElement("button");
     deleteBtn.textContent = "Delete";
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function removeTask(taskToRemove) {
     const storedTasks = JSON.parse(localStorage.getItem("tasks") || "[]");
     const updatedTasks = storedTasks.filter(task =>
-      !(task.text === taskToRemove.text && task.category === taskToRemove.category)
+      !(task.text === taskToRemove.text && task.category === taskToRemove.category && task.priority === taskToRemove.priority)
     );
     localStorage.setItem("tasks", JSON.stringify(updatedTasks));
   }
