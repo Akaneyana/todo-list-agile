@@ -5,15 +5,13 @@
 {% block head %}
 <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
-<script src="{{ url_for('static', filename='js/add.js') }}" defer></script>
+<script src="{{ url_for('static', filename='js/list.js') }}" defer></script>
 {% endblock %}
 
 {% block content %}
 <div class="container">
     <div class="todo-container">
         <h1>To-Do List</h1>
-        <input type="text" id="myInput" placeholder="Add a new task">
-        <button id="addButton">Add</button>
 
         <ul id="ulList">
             <!-- List items will be dynamically added here -->
