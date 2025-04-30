@@ -1,3 +1,9 @@
+.completed {
+    text-decoration: line-through;
+    color: gray;
+    opacity: 0.7;
+  }
+
 /* Body og html bør ha null margin */
 html, body {
     margin: 0;
@@ -131,4 +137,4 @@ html, body {
   .delete-btn:hover {
     background-color: #a93226;
   }
-  
+
