@@ -14,6 +14,14 @@ document.addEventListener("DOMContentLoaded", function () {
       removeTask(task);
     };
 
+    const doneBtn = document.createElement("button");
+    doneBtn.textContent = "Done";
+    doneBtn.classList.add("done-btn");
+    doneBtn.onclick = () => {
+      li.classList.toggle("completed");
+    };
+
+    li.appendChild(doneBtn);
     li.appendChild(deleteBtn);
     list.appendChild(li);
   });
