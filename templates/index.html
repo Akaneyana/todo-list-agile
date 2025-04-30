@@ -12,11 +12,20 @@
 <div class="container">
     <div class="todo-container">
         <h1>To-Do List</h1>
+        
         <input type="text" id="myInput" placeholder="Add a new task">
-        <button id="addButton">Add</button>
+
+        <!-- Kategori dropdown -->
+        <select id="categorySelect">
+          <option value="">Velg kategori</option>
+          <option value="Skole">Skole</option>
+          <option value="Hjemme">Hjemme</option>
+          <option value="Fritid">Fritid</option>
+        </select>
+        
+        <button id="addButton" disabled>Legg til</button>
 
         <ul id="ulList">
-            <!-- List items will be dynamically added here -->
         </ul>
     </div>
 </div>

@@ -3,3 +3,138 @@
     color: gray;
     opacity: 0.7;
   }
+
+/* Body og html bør ha null margin */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  /* Containeren skal sentreres vertikalt bare hvis det er nødvendig */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* eller center hvis du VIL ha midt på */
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  
+  /* Den hvite boksen bak */
+  .todo-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex-wrap: wrap; /* Viktig for små skjermer! */
+    box-sizing: border-box;
+  }
+  
+  /* En enkelt liste-boks */
+  .category-list {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    box-sizing: border-box;
+  }
+  
+  /* Overskriften i hver kategori */
+  .category-list h2 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Oppgaveelementene */
+  .category-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+  }
+  
+  .category-list ul li {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .category-list ul li button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .category-list ul li button:hover {
+    background-color: #c0392b;
+  }
+
+  .list-column {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #444; /* mørkere kantlinje */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* mørkere skygge */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  .list-column h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .list-column ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .list-column li {
+    padding: 10px;
+    border-bottom: 1px solid #aaa; /* litt mørkere enn før */
+  }
+  
+  .list-column li:last-child {
+    border-bottom: none;
+  }
+  
+  .delete-btn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .delete-btn:hover {
+    background-color: #a93226;
+  }
+
