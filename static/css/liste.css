@@ -74,7 +74,14 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+    font-size: 14px;
+}
+
+.category-list ul li span.priority {
+    font-weight: bold;
+    margin-left: 10px;
+    color: #555;
+}
   
   .category-list ul li button {
     background-color: #e74c3c;
