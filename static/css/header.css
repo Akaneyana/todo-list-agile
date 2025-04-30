@@ -1,0 +1,12 @@
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    height: 10vh;
+    border-bottom: solid .5vh black;
+    margin-bottom: 3vh;
+    background-color: #202b35;
+    color: white;
+    border-bottom: .8vh solid white;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Default Title{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    {% block head %}{% endblock %}
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <a href="{{ url_for('index') }}">Home</a>
+      <a href="#">Test</a>
+      <a href="#">Test</a>
+    </div>
+  </header>
+  
+  <main>
+      {% block content %}{% endblock %}
+  </main>
+</body>
+</html>
